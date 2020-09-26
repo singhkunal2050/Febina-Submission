@@ -1,64 +1,69 @@
-:root{
-  --main-bg-color:#790c5a;
-  --secondary-bg:#cc0e74;
-  --p-font-col:#e68daf;
-  --s-font-col:#ffb2a7;
+:root {
+  --main-bg-color: #790c5a;
+  --secondary-bg: #cc0e74;
+  --p-font-col: #e68daf;
+  --s-font-col: #ffb2a7;
 }
 
 /* font converted using font-converter.net. thank you! */
 @font-face {
   font-family: "RedLipstick-PersonalUse";
-  src: url("fonts/RedLipstick.woff") format("woff"); /* Modern Browsers */
+  src: url("fonts/RedLipstick.woff") format("woff");
+  /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
 
 
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-.navbar{
-  padding: 10px  !important;
-  background:var(--secondary-bg) !important;
+.navbar {
+  padding: 10px !important;
+  background: var(--secondary-bg) !important;
 }
 
-.hero{
+.hero {
   background: url('img/banner.png');
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
 }
-.hero h1{
-  margin-top: 120px; 
-  font-family:'RedLipstick-PersonalUse';
+
+.hero h1 {
+  margin-top: 120px;
+  font-family: 'RedLipstick-PersonalUse';
   font-size: 4em;
   color: #18000c;
 }
 
-#logo_text{
-  font-family:'RedLipstick-PersonalUse';
+#logo_text {
+  font-family: 'RedLipstick-PersonalUse';
   font-size: 2.5em;
 }
 
-@media(max-width:400px){
-  .hero h1{
-    margin-top: 80px; 
+@media(max-width:400px) {
+  .hero h1 {
+    margin-top: 10px;
   }
-  
+
+  #typed{
+    height: 320px;
+  }
 }
 
-.highlight{
+.highlight {
   color: var(--secondary-bg) !important;
 }
 
-.desc{
+.desc {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,15 +71,62 @@ html{
 
 /* removing btns from slick sliders  */
 
-.autoplay button{
+.autoplay button {
   display: none !important;
 }
 
 /* center banner */
 
-.center-banner{
+.center-banner {
   height: 600px;
-  background: url(img/banner2.png);
+  background: url(img/banner3.png);
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
 }
+
+.cursive-container{
+  /* background: red; */
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.lipstick {
+  margin-top: 200px;
+  text-align: center;
+  font-family: 'RedLipstick-PersonalUse';
+  font-size: 5em;
+  font-weight: bold;
+  color: #350101;
+}
+
+@media(max-width:768px) {
+  .cursive-container{
+    width: 60%;
+  } 
+
+  .lipstick {
+    font-size: 3em;
+    margin-top: 50px;
+    margin-left: 150px;
+  }
+}
+
+
+@media(max-width:411px) {
+  .cursive-container{
+    width: 90%;
+  } 
+
+  .lipstick {
+    font-size: 2.5em;
+    margin-top: 50px;
+    margin-left: 250px;
+  }
+}
+
+
