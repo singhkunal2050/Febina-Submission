@@ -174,7 +174,6 @@ body {
   text-align: center;
   font-family: 'RedLipstick-PersonalUse';
   font-size: 5em;
-  font-weight: bold;
   color: #350101;
 }
 
@@ -256,6 +255,31 @@ button:focus {
   }
 }
 
+/* course content flexbox */
+
+.course-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.course-content .card {
+  padding: 40px 20px;
+  margin: 10px 20px;
+  -webkit-box-shadow: 1px 1px 20px 1px rgba(240, 183, 240, 0.38);
+  -moz-box-shadow: 1px 1px 20px 1px rgba(240, 183, 240, 0.38);
+  box-shadow: 1px 1px 20px 1px rgba(240, 183, 240, 0.38);
+}
+
+.course-content .card .title h2 {
+  font-size: 1.4em;
+}
+
+
+
 /**
   * Modal
   */
@@ -318,9 +342,13 @@ button:focus {
   transition-delay: 0.3s;
 }
 
-.modal .modal-content *{
+.modal .modal-content * {
   padding: 10px;
   margin: 10px;
+}
+
+.form-input {
+  border: 0;
 }
 
 
