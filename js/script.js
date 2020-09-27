@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
   // $('.autoplay').slick({
   //   slidesToShow: 3,
@@ -58,3 +59,5 @@ $('button#modal-btn').click(function(){
 $('.close-modal').click(function(){
     elements.removeClass('active');
 });
+
+
