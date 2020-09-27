@@ -18,8 +18,8 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">
-        <img src="Tree-01.png" width="30" height="30" style="height: 50px; width: 50px; margin-top: 10px;" class="d-inline-block align-top" alt=""
-          loading="lazy">
+      <img src="Tree-01.png" width="30" height="30" style="height: 50px; width: 50px; margin-top: 10px;"
+        class="d-inline-block align-top" alt="" loading="lazy">
       <span id="logo_text"> Febina</span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
@@ -52,7 +52,9 @@
         <p>Be your own stylist and glam yourself with perfect Skin </p>
         <p>Be your own stylist and glam yourself with perfect Hair</p>
       </div>
-      <button class="btn-primary" style="padding: 10px 20px; background: #cc0e74; border: 0; margin-left: 50px;">Enroll Now</button>
+      <button id="modal-btn" class="btn-primary"
+        style="padding: 10px 20px; background: #cc0e74; border: 0; margin-left: 50px; border-radius: 24px; ">Enroll
+        Now</button>
     </div>
 
     <div class="jumbotron mb-0" id="intro">
@@ -82,7 +84,10 @@
 
     <div class="jumbotron pb-2 mb-0" id="content" style="background: #e68daf;">
       <div class="text-center pb-4 mb-3">
-        <h2>Work around all the Fashion<span class="highlight"> Products</span></h2>
+        <h2 class="pb-4">Work around all the Fashion<span class="highlight"> Products</span></h2>
+        <span class="care-tag">We care <span class="mdi mdi-shield-home"></span> </span>
+        <p class="description-text">In these Covid19 situations we are helping in online training of
+          professionals and trying to contribute to the Stay Home Stay Safe Movement!</p>
       </div>
       <div class="autoplay">
         <div><img src="img/kit/1.png" alt=""></div>
@@ -100,25 +105,60 @@
       </div>
     </div>
 
-    <div class="jumbotron">
+    <div class="jumbotron mb-0">
       <div class="text-center pb-4 mb-3">
         <h2>What you will learn from the <span class="highlight">Course</span></h2>
       </div>
-      
+
 
     </div>
 
-    <div class="jumbotron jumbotron-fluid center-banner " id="dream">
-      <div class="cursive-container" >
-        <h1 class="lipstick" >Become the Artist that you always wanted to be!</h1>
+    <div class="jumbotron jumbotron-fluid center-banner mb-0" id="dream">
+      <div class="cursive-container">
+        <h1 class="lipstick">Become the Artist that you always wanted to be!</h1>
       </div>
-      
     </div>
 
 
+
+    <!-- modal -->
+    <div class="modal-overlay">
+      <div class="modal">
+
+        <a class="close-modal">
+          <svg viewBox="0 0 20 20">
+            <path fill="#000000"
+              d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z">
+            </path>
+          </svg>
+        </a><!-- close modal -->
+
+        <div class="modal-content text-center">
+          <h3 style="margin: 10px;"><strong>Enroll with Form to get Coupon Code</strong></h3>
+
+          <div style="display: flex; flex-direction: column; margin: 10px;">
+              <script type="text/javascript">var submitted = false;</script>
+              <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                  onload="if(submitted) {window.location='thankyou.html';}"></iframe>
+
+              <form
+                  action="https://docs.google.cok/forms/u/7/d/e/1FAIpQLScufLs8OlUS-dsadadas/formResponse"
+                  style="display: flex; flex-direction: column; justify-content: stretch;"
+                  target="hidden_iframe" onsubmit="submitted=true;">
+                  <input type="text" class="form-input" name="entry.831785372" placeholder="Name" required>
+                  <input type="tel" minlength="10" maxlength="10" class="form-input" name="entry.744172265" placeholder="PhoneNo" required>
+                  <input type="email" class="form-input" name="entry.544595364" placeholder="Email" required>
+                  <input type="text" class="form-input" name="entry.1425119734" placeholder="Domain eg: Java"
+                      required>
+
+                  <button type="submit" name="Submit" style="color: white; background: #cc0e74; border: 0; border-radius: 24px; ">SUBMIT</button>
+              </form>
+       
+        </div><!-- content -->
+
+      </div><!-- modal -->
+    </div><!-- overlay -->
   </main>
-
-
 
   <!-- JS, Popper.js, and jQuery -->
   <script src="js/jquery-3.5.1.slim.min.js"></script>

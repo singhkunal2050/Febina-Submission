@@ -45,3 +45,16 @@ $(document).ready(function(){
   
 });
 
+
+
+// for modal 
+
+var elements = $('.modal-overlay, .modal');
+
+$('button#modal-btn').click(function(){
+    elements.addClass('active');
+});
+
+$('.close-modal').click(function(){
+    elements.removeClass('active');
+});
