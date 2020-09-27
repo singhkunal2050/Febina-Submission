@@ -267,11 +267,23 @@ button:focus {
 }
 
 .course-content .card {
+  border-radius: 8px;
   padding: 40px 20px;
   margin: 10px 20px;
   -webkit-box-shadow: 1px 1px 20px 1px rgba(240, 183, 240, 0.38);
   -moz-box-shadow: 1px 1px 20px 1px rgba(240, 183, 240, 0.38);
   box-shadow: 1px 1px 20px 1px rgba(240, 183, 240, 0.38);
+  transition: ease-in-out 300ms;
+
+}
+
+.course-content .card:hover,
+.course-content .card:active {
+  -webkit-box-shadow: 1px 1px 10px 4px rgba(237, 173, 237, 0.7);
+  -moz-box-shadow: 1px 1px 10px 4px rgba(237, 173, 237, 0.7);
+  box-shadow: 1px 1px 10px 4px rgba(237, 173, 237, 0.7);
+  transition: ease-in-out 300ms;
+  background: #fdecf3;
 }
 
 .course-content .card .title h2 {
