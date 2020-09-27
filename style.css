@@ -33,7 +33,7 @@ body {
 
 .navbar {
   padding: 10px !important;
-  background:linear-gradient(110deg ,#231a25 ,#70063f) ;
+  background: linear-gradient(110deg, #231a25, #70063f);
 }
 
 .navbar .nav-item {
@@ -407,9 +407,28 @@ button:focus {
   }
 }
 
+/* certificate  */
+
+.certificate-card img {
+  -webkit-box-shadow: 10px 10px 76px -32px rgba(255,234,0,0.69);
+  -moz-box-shadow: 10px 10px 76px -32px rgba(255,234,0,0.69);
+  box-shadow: 10px 10px 76px -32px rgba(255,234,0,0.69);
+}
+
+@media(max-width:670px) {
+
+  .certificate-card {
+    width: 100vw;
+  }
+
+  .certificate-card img {
+    width: 90%;
+  }
+
+
+}
+
 /* footer  */
-
-
 
 section {
   padding: 60px 0;
@@ -485,7 +504,7 @@ ul {
 
 section,
 footer {
-  background:linear-gradient(110deg ,#231a25 ,#70063f);
+  background: linear-gradient(110deg, #231a25, #70063f);
   color: #f3d8e2;
 }
 
