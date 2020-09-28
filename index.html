@@ -13,12 +13,16 @@
   <!-- Material ICons  -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.6.55/css/materialdesignicons.min.css">
+  <!-- AOS  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <title>Febina Group</title>
 </head>
 
 <body>
 
+  <!-- preloader  -->
+ 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">
       <img src="Tree-01.png" width="30" height="30" style="height: 50px; width: 50px; margin-top: 10px;"
@@ -85,7 +89,7 @@
 
         <div class="container mt-50">
           <div class="row justify-content-start">
-            <div class="col-xl-6 col-lg-6 desc">
+            <div class="col-xl-6 col-lg-6 desc" data-aos="fade-right">
               <div class="section-tittle text-center mb-10">
                 <h2>Make the most of Lockdown and become a<span class="highlight"> Beauty Expert</span></h2>
                 <p>Become an expert in pampering your skin and Hair on your own. This acclaimed 15 days Self Grooming
@@ -96,7 +100,7 @@
                   day-to-day life. Join us today and get skilled in key areas of skin care and hair care.</p>
               </div>
             </div>
-            <div class="col-xl-4 col-lg-4">
+            <div class="col-xl-4 col-lg-4" data-aos="fade-left">
               <img src="img/face.jpg" style="height: 100%;" alt="">
             </div>
           </div>
@@ -104,7 +108,7 @@
       </div>
     </div>
 
-    <div class="jumbotron pb-2 mb-0" style="background: #f7cfde;">
+    <div class="jumbotron pb-2 mb-0" style="background: #f7cfde;" data-aos="fade-up">
       <div class="text-center pb-4 mb-3">
         <h2 class="pb-4">Work around all the Fashion<span class="highlight"> Products</span></h2>
         <span class="care-tag">We care <span class="mdi mdi-shield-home"></span> </span>
@@ -127,7 +131,7 @@
       </div>
     </div>
 
-    <div class="jumbotron mb-0" id="content">
+    <div class="jumbotron mb-0" id="content" >
       <div class="text-center pb-4 mb-3">
         <h2>What you will learn from the <span class="highlight">Course</span></h2>
       </div>
@@ -235,19 +239,19 @@
       </div>
     </div>
 
-    <div class="jumbotron jumbotron-fluid center-banner mb-0" id="dream">
+    <div class="jumbotron jumbotron-fluid center-banner mb-0" id="dream" data-aos="fade-right">
       <div class="cursive-container">
         <h1 class="lipstick">Become the Artist that you always wanted to be!</h1>
       </div>
     </div>
 
-    <div class="jumbotron mb-0" id="certificate">
+    <div class="jumbotron mb-0" id="certificate" data-aos="fade-left">
       <div class="text-center pb-4 mb-3">
         <h2>Get Certified after Course <span class="highlight">Completion</span> <i class="mdi mdi-trophy-award"></i>
         </h2>
       </div>
 
-      <div class="certificate-container">
+      <div class="certificate-container" data-aos="face-up">
         <div class="row-cols-1">
           <div class="d-flex justify-content-center certificate-card">
             <img src="img/certificate/demo.png" alt="">
@@ -343,6 +347,11 @@
   <!-- SLCIK  -->
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/script.js"></script>
+  <!-- AOS  -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 

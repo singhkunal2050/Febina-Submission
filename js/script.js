@@ -61,3 +61,4 @@ $('.close-modal').click(function(){
 });
 
 
+// preloader 
